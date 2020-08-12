@@ -12,10 +12,10 @@
 
 ## React App
 
-- Run `npm run dev:react / `yarn dev:react`
+- Run `npm run dev:react` / `yarn dev:react`
 
 ## Electron
 
 In a seperate command prompt:
 
-- Run `npm run dev:electron / `yarn dev:electron`
+- Run `npm run dev:electron` / `yarn dev:electron`
