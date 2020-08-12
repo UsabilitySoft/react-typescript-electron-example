@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './styles.less';
 
 const mainElement = document.createElement('div');
 document.body.appendChild(mainElement);
