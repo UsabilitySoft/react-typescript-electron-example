@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+    />
+    <h2
+      className="MuiTypography-root MuiTypography-h5"
+    />
+  </div>
+</div>
+`;

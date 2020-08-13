@@ -6,8 +6,8 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
     mainFields: ['main', 'module', 'browser'],
   },
-  entry: './src/app.tsx',
-  target: 'electron-renderer',
+  entry: ['babel-polyfill', './src/app.tsx'],
+  // target: 'electron-renderer',
   devtool: 'source-map',
   module: {
     rules: [

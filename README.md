@@ -14,8 +14,14 @@
 
 - Run `npm run dev:react` / `yarn dev:react`
 
-## Electron
+## Optional Run in Electron
+
+If you wish to run the app in Electron
+
+- Uncomment webpack.electron.config Line 10:
+   // target: 'electron-renderer',
+
+- Run `npm run dev:react` / `yarn dev:react`
 
 In a seperate command prompt:
-
 - Run `npm run dev:electron` / `yarn dev:electron`

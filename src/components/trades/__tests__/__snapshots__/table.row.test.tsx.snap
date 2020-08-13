@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there is one row 1`] = `
+<tr
+  className="MuiTableRow-root"
+  role={null}
+>
+  <th
+    aria-sort={null}
+    className="MuiTableCell-root"
+    role="cell"
+    scope="row"
+  >
+    3% GC/3.5% Barges Rot
+  </th>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    Fuel
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  />
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    2020-12-31
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  />
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    buy
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    2020-12-01
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    2019-09-06T17:39:16.477417Z
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    2019-09-06
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    6.00000000
+  </td>
+  <td
+    aria-sort={null}
+    className="MuiTableCell-root"
+  >
+    22.50000000
+  </td>
+</tr>
+`;
