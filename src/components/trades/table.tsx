@@ -10,12 +10,6 @@ interface ITradesTableProps {
 
 export const TradesTable: React.FC<ITradesTableProps> = (props) => {
 
-  let [tradesData] = useState<ITradesTableProps | undefined>(props.tradesData);
-
-  useEffect(() => {
-    console.log('TABLE',tradesData)
-  }, [tradesData]);
-  
   return (
     <Table padding="default">
       <TableHead>
@@ -34,9 +28,9 @@ export const TradesTable: React.FC<ITradesTableProps> = (props) => {
         </TableRow>
       </TableHead>
       <TableBody>
-        { tradesData.map((row: ITradeRow) => {
+        { props.tradesData.map((row: ITradeRow) => {
             return (
-              <TradeRow row={row}></TradeRow>
+              <TradeRow id={row.id} row={row}></TradeRow>
             )
           }) 
         }

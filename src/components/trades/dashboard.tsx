@@ -17,7 +17,7 @@ const darkTheme = createMuiTheme({
 
 export default function Dashboard() {
 
-  const [tradesData, setTradesData] = useState<ITrades | undefined>(undefined);
+  const [tradesData, setTradesData] = useState<ITrades | undefined>([]);
   const [filter, setFilter] = useState<IFilter | undefined>(undefined);
   const [averageTradePrice, setAverageTradePrice] = useState(0);
   const [totalTradePrice, setTotalTradePrice] = useState(0);
@@ -33,6 +33,7 @@ export default function Dashboard() {
         let tradePrices = data.map(a => a.trade_price-0);
         setAverageTradePrice(getAverageTradePrice(tradePrices));
         setTotalTradePrice(getTotalTradePrice(tradePrices));
+        console.log(data);
       })
       .catch(error => console.log(error.message))
   }, [filter]);

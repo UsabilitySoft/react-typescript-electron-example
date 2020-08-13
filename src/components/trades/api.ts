@@ -16,10 +16,10 @@ export async function getTradesData(filter: IFilter) {
     data = data.filter(a => a.product_name.toLowerCase().indexOf(filter.search.toLowerCase()) !== -1)    
   }
   if(filter && filter.broker){
-    data = data.filter(a => a.broker_name.toLowerCase().indexOf(filter.broker.toLowerCase()) !== -1)
+    data = data.filter(a => a.broker_name.toLowerCase() == filter.broker.toLowerCase())
   }
   if(filter && filter.side){
-    data = data.filter(a => a.side.toLowerCase().indexOf(filter.side.toLowerCase()) !== -1)
+    data = data.filter(a => a.side.toLowerCase() == filter.side.toLowerCase())
   }
   return data
 }

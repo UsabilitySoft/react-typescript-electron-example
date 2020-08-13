@@ -22,7 +22,7 @@ interface ITradeRowProps {
 
 export const TradeRow: React.FC<ITradeRowProps> = (props) => {
 
-  const [row] = useState<ITradeRow | undefined>(props.row);
+  const row = props.row;
 
   return (
       <TableRow key={row.id}>

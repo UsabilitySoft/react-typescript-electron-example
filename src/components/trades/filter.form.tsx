@@ -32,7 +32,7 @@ export function FilterForm(props) {
     <div>
       <div>
         <TextField value={search} 
-          onChange={e => setSearch(e.target.value)} label="Product Name Search" />
+          onChange={e => setSearch(e.target.value)} label="Search Product Name..." />
       </div>
       <div>
         <FormControl>
