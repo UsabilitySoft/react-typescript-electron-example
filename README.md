@@ -8,7 +8,7 @@
 
 ## Vercer Trades API
 
-(You will need to run the Vercer trades API as per Vercer Trades Readme)
+(You will need to run the Vercer trades API as per Vercer trades readme)
 
 ## React App
 
