@@ -20,7 +20,7 @@ You can then access the application via `http://localhost:4000/`.
 
 If you wish to run the app in Electron
 
-- Uncomment webpack.electron.config Line 10:
+- Uncomment webpack.react.config Line 10:
    // target: 'electron-renderer',
 
 - Run `npm run dev:react` / `yarn dev:react`
