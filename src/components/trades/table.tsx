@@ -14,17 +14,17 @@ export const TradesTable: React.FC<ITradesTableProps> = (props) => {
     <Table padding="default">
       <TableHead>
         <TableRow>
+          <TableCell>{Fields.SIDE.TITLE}</TableCell>
+          <TableCell>{Fields.TRADE_DATE.TITLE}</TableCell>
           <TableCell>{Fields.PRODUCT_NAME.TITLE}</TableCell>
           <TableCell>{Fields.BOOK_NAME.TITLE}</TableCell>
-          <TableCell>{Fields.CANCELLED.TITLE}</TableCell>
-          <TableCell>{Fields.END_DATE.TITLE}</TableCell>
-          <TableCell>{Fields.MATCHED_TRADE.TITLE}</TableCell>
-          <TableCell>{Fields.SIDE.TITLE}</TableCell>
-          <TableCell>{Fields.START_DATE.TITLE}</TableCell>
-          <TableCell>{Fields.TIME_CREATED.TITLE}</TableCell>
-          <TableCell>{Fields.TRADE_DATE.TITLE}</TableCell>
-          <TableCell>{Fields.TRADE_DISPLAY_VOLUME.TITLE}</TableCell>
           <TableCell>{Fields.TRADE_PRICE.TITLE}</TableCell>
+          <TableCell>{Fields.TRADE_DISPLAY_VOLUME.TITLE}</TableCell>
+          <TableCell>{Fields.CANCELLED.TITLE}</TableCell>
+          <TableCell>{Fields.MATCHED_TRADE.TITLE}</TableCell>
+          <TableCell>{Fields.START_DATE.TITLE}</TableCell>
+          <TableCell>{Fields.END_DATE.TITLE}</TableCell>
+          <TableCell>{Fields.TIME_CREATED.TITLE}</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

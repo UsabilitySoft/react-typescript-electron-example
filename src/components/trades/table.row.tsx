@@ -26,17 +26,17 @@ export const TradeRow: React.FC<ITradeRowProps> = (props) => {
 
   return (
       <TableRow key={row.id}>
-        <TableCell component="th" scope="row">{row.product_name}</TableCell>
-        <TableCell>{row.book_name}</TableCell>
-        <TableCell>{row.cancelled}</TableCell>
-        <TableCell>{row.end_date}</TableCell>
-        <TableCell>{row.matched_trade}</TableCell>
         <TableCell>{row.side}</TableCell>
-        <TableCell>{row.start_date}</TableCell>
-        <TableCell>{row.time_created}</TableCell>
         <TableCell>{row.trade_date}</TableCell>
-        <TableCell>{row.trade_display_volume}</TableCell>
-        <TableCell>{row.trade_price}</TableCell>
+        <TableCell>{row.product_name}</TableCell>
+        <TableCell>{row.book_name}</TableCell>
+        <TableCell>{(row.trade_price-0).toFixed(2)}</TableCell>
+        <TableCell>{(row.trade_display_volume-0).toFixed(0)}</TableCell>
+        <TableCell>{row.cancelled}</TableCell>
+        <TableCell>{row.matched_trade}</TableCell>
+        <TableCell>{row.start_date}</TableCell>
+        <TableCell>{row.end_date}</TableCell>
+        <TableCell>{row.time_created}</TableCell>
       </TableRow>
   );
 };

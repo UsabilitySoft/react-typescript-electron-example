@@ -33,7 +33,6 @@ export default function Dashboard() {
         let tradePrices = data.map(a => a.trade_price-0);
         setAverageTradePrice(getAverageTradePrice(tradePrices));
         setTotalTradePrice(getTotalTradePrice(tradePrices));
-        console.log(data);
       })
       .catch(error => console.log(error.message))
   }, [filter]);
