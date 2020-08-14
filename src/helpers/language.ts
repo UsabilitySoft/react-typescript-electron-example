@@ -14,5 +14,6 @@ export const Fields = {
 
 export const Titles = {
   AVERAGE_TRADE_PRICE: { TITLE: "Average Trade Price" },
-  TOTAL_TRADE_PRICE: { TITLE: "Total Trade Price" }
+  TOTAL_TRADE_PRICE: { TITLE: "Total Trade Price" },
+  RESULTS: { TITLE: "From No. Trades" }
 }

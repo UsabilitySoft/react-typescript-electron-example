@@ -26,7 +26,7 @@ export const TradeRow: React.FC<ITradeRowProps> = (props) => {
 
   return (
       <TableRow key={row.id}>
-        <TableCell>{row.side}</TableCell>
+        <TableCell>{row.side.toUpperCase()}</TableCell>
         <TableCell>{row.trade_date}</TableCell>
         <TableCell>{row.product_name}</TableCell>
         <TableCell>{row.book_name}</TableCell>

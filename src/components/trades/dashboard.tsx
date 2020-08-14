@@ -21,6 +21,7 @@ export default function Dashboard() {
   const [filter, setFilter] = useState<IFilter | undefined>(undefined);
   const [averageTradePrice, setAverageTradePrice] = useState(0);
   const [totalTradePrice, setTotalTradePrice] = useState(0);
+  const [rowCount, setRowCount] = useState(0);
 
   const handleFilterChange = (filter) => {
     setFilter(filter);
@@ -33,6 +34,7 @@ export default function Dashboard() {
         let tradePrices = data.map(a => a.trade_price-0);
         setAverageTradePrice(getAverageTradePrice(tradePrices));
         setTotalTradePrice(getTotalTradePrice(tradePrices));
+        setRowCount(data.length);
       })
       .catch(error => console.log(error.message))
   }, [filter]);
@@ -41,9 +43,9 @@ export default function Dashboard() {
     <ThemeProvider theme={darkTheme}>
       
       <FilterForm onChange={handleFilterChange}></FilterForm>
-
       <SummaryCard title={Titles.AVERAGE_TRADE_PRICE.TITLE} value={averageTradePrice}></SummaryCard>
       <SummaryCard title={Titles.TOTAL_TRADE_PRICE.TITLE} value={totalTradePrice}></SummaryCard>
+      <SummaryCard title={Titles.RESULTS.TITLE} value={rowCount}></SummaryCard>
       
       { tradesData ? 
         <TradesTable tradesData={tradesData}></TradesTable>
