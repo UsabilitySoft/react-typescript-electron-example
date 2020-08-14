@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 
 import { Fields } from '../../helpers/language';
@@ -30,7 +30,7 @@ export const TradesTable: React.FC<ITradesTableProps> = (props) => {
       <TableBody>
         { props.tradesData.map((row: ITradeRow) => {
             return (
-              <TradeRow id={row.id} row={row}></TradeRow>
+              <TradeRow key={row.id} row={row}></TradeRow>
             )
           }) 
         }

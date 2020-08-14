@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TableCell, TableRow } from '@material-ui/core';
 
 export interface ITradeRow {
