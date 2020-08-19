@@ -11,7 +11,7 @@ Array [
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
           data-shrink={false}
         >
-          Product Name Search
+          Search Product Name...
         </label>
         <div
           className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
@@ -211,7 +211,7 @@ Array [
       <h2
         className="MuiTypography-root MuiTypography-h5"
       >
-        0
+        0.000
       </h2>
     </div>
   </div>,
@@ -225,6 +225,24 @@ Array [
         className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
       >
         Total Trade Price
+      </p>
+      <h2
+        className="MuiTypography-root MuiTypography-h5"
+      >
+        0.000
+      </h2>
+    </div>
+  </div>,
+  <div
+    className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
+      >
+        From No. Trades
       </p>
       <h2
         className="MuiTypography-root MuiTypography-h5"

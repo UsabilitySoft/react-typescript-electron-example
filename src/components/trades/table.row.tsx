@@ -17,12 +17,15 @@ export interface ITradeRow {
 }
 
 interface ITradeRowProps {
-  row: ITradeRow;
+  row: ITradeRow,
+  lowTradePrice: number,
+  highTradePrice: number
 }
 
 export const TradeRow: React.FC<ITradeRowProps> = (props) => {
 
   const row = props.row;
+  console.log(props.lowTradePrice)
 
   return (
       <TableRow key={row.id}>
@@ -30,7 +33,10 @@ export const TradeRow: React.FC<ITradeRowProps> = (props) => {
         <TableCell>{row.trade_date}</TableCell>
         <TableCell>{row.product_name}</TableCell>
         <TableCell>{row.book_name}</TableCell>
-        <TableCell>{(row.trade_price-0).toFixed(2)}</TableCell>
+        <TableCell style={
+          row.trade_price == props.lowTradePrice ? { color: 'red' } : 
+          row.trade_price == props.highTradePrice ? { color: 'green' } : null
+        }>{(row.trade_price-0).toFixed(2)}</TableCell>
         <TableCell>{(row.trade_display_volume-0).toFixed(0)}</TableCell>
         <TableCell>{row.cancelled}</TableCell>
         <TableCell>{row.matched_trade}</TableCell>

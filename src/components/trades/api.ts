@@ -23,13 +23,3 @@ export async function getTradesData(filter: IFilter) {
   }
   return data
 }
-
-export function getAverageTradePrice(tradePricesArray: []){
-  let totalTradePrices = getTotalTradePrice(tradePricesArray);
-  return (totalTradePrices/tradePricesArray.length).toFixed(3);
-}
-
-export function getTotalTradePrice(tradePricesArray: []){
-  let totalTradePrices = tradePricesArray.reduce((a, b) => a + b, 0);
-  return totalTradePrices.toFixed(3);
-}

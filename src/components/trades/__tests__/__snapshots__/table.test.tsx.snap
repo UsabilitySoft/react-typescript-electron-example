@@ -18,6 +18,20 @@ exports[`renders correctly when there is one row 1`] = `
         className="MuiTableCell-root MuiTableCell-head"
         scope="col"
       >
+        Side
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Trade Date
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
         Product Name
       </th>
       <th
@@ -32,49 +46,7 @@ exports[`renders correctly when there is one row 1`] = `
         className="MuiTableCell-root MuiTableCell-head"
         scope="col"
       >
-        Cancelled
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        End Date
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        Matched
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        Side
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        Start Date
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        Time Created
-      </th>
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-head"
-        scope="col"
-      >
-        Trade Date
+        Trade Price
       </th>
       <th
         aria-sort={null}
@@ -88,7 +60,35 @@ exports[`renders correctly when there is one row 1`] = `
         className="MuiTableCell-root MuiTableCell-head"
         scope="col"
       >
-        Trade Price
+        Cancelled
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Matched
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Start Date
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        End Date
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        Time Created
       </th>
     </tr>
   </thead>
@@ -100,51 +100,11 @@ exports[`renders correctly when there is one row 1`] = `
       className="MuiTableRow-root"
       role={null}
     >
-      <th
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-        role="cell"
-        scope="row"
-      >
-        3% GC/3.5% Barges Rot
-      </th>
       <td
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body"
       >
-        Fuel
-      </td>
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      />
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      >
-        2020-12-31
-      </td>
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      />
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      >
-        buy
-      </td>
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      >
-        2020-12-01
-      </td>
-      <td
-        aria-sort={null}
-        className="MuiTableCell-root MuiTableCell-body"
-      >
-        2019-09-06T17:39:16.477417Z
+        BUY
       </td>
       <td
         aria-sort={null}
@@ -156,13 +116,52 @@ exports[`renders correctly when there is one row 1`] = `
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body"
       >
-        6.00000000
+        3% GC/3.5% Barges Rot
       </td>
       <td
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body"
       >
-        22.50000000
+        Fuel
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+        style={null}
+      >
+        22.50
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        6
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      />
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      />
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        2020-12-01
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        2020-12-31
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        2019-09-06T17:39:16.477417Z
       </td>
     </tr>
   </tbody>

@@ -5,7 +5,9 @@ import { Fields } from '../../helpers/language';
 import { ITradeRow, TradeRow } from './table.row';
 
 interface ITradesTableProps {
-  tradesData: ITradeRow[];
+  tradesData: ITradeRow[]
+  lowTradePrice: number,
+  highTradePrice: number
 }
 
 export const TradesTable: React.FC<ITradesTableProps> = (props) => {
@@ -30,7 +32,7 @@ export const TradesTable: React.FC<ITradesTableProps> = (props) => {
       <TableBody>
         { props.tradesData.map((row: ITradeRow) => {
             return (
-              <TradeRow key={row.id} row={row}></TradeRow>
+              <TradeRow lowTradePrice={props.lowTradePrice} highTradePrice={props.highTradePrice} key={row.id} row={row}></TradeRow>
             )
           }) 
         }
