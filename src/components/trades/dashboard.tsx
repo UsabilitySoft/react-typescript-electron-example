@@ -25,7 +25,7 @@ const defaultTradeCalcs = {
 
 export default function Dashboard() {
 
-  const [tradesData, setTradesData] = useState<ITrades | undefined>(undefined);
+  const [tradesData, setTradesData] = useState(undefined);
   const [filter, setFilter] = useState<IFilter | undefined>(undefined);
   const [tradePriceCalculations, setTradePriceCalculations] = useState<ITradePriceCalculation>(defaultTradeCalcs);
   const [rowCount, setRowCount] = useState(0);

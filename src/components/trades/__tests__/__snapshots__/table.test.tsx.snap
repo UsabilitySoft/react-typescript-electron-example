@@ -127,7 +127,6 @@ exports[`renders correctly when there is one row 1`] = `
       <td
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-body"
-        style={null}
       >
         22.50
       </td>
