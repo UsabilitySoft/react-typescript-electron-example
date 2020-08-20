@@ -25,7 +25,6 @@ interface ITradeRowProps {
 export const TradeRow: React.FC<ITradeRowProps> = (props) => {
 
   const row = props.row;
-  console.log(props.lowTradePrice)
 
   return (
       <TableRow key={row.id}>
@@ -35,7 +34,7 @@ export const TradeRow: React.FC<ITradeRowProps> = (props) => {
         <TableCell>{row.book_name}</TableCell>
         <TableCell style={
           row.trade_price == props.lowTradePrice ? { color: 'red' } : 
-          row.trade_price == props.highTradePrice ? { color: 'green' } : null
+          row.trade_price == props.highTradePrice ? { color: 'green' } : undefined
         }>{(row.trade_price-0).toFixed(2)}</TableCell>
         <TableCell>{(row.trade_display_volume-0).toFixed(0)}</TableCell>
         <TableCell>{row.cancelled}</TableCell>
