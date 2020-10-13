@@ -1,4 +1,4 @@
-# Vercer Take Home Technical Challenge Westley Cooper-Thorn
+# React, TypeScript, Electron Example
 
 ## Setup
 
@@ -6,9 +6,9 @@
 
 ## Run
 
-## Vercer Trades API
+## Trades API
 
-(You will need to run the Vercer trades API as per Vercer trades readme)
+(You will need to run the trades API as per trades readme)
 
 ## React App
 
