@@ -1,4 +1,4 @@
-# React, TypeScript, Electron Example
+# React, TypeScript, Material-UI, Electron - Example
 
 ## Setup
 
