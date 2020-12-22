@@ -10,6 +10,7 @@ Jest,
 Workbox
 (Optional Electron)
 
+# React, TypeScript, Material-UI, Electron - Example
 
 ## Setup
 
@@ -19,7 +20,7 @@ Workbox
 
 ## Trades API
 
-(You will need to run the trades API)
+(You will need to run the trades API as per trades readme)
 
 ## React App
 
