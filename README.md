@@ -1,4 +1,15 @@
-# Vercer Take Home Technical Challenge Westley Cooper-Thorn
+# Simple Trader PWA
+
+Simple Trader PWA is an example application that uses the following technologies.
+
+React (Hooks), 
+[Redux]
+TypeScript, 
+Webpack, 
+Jest, 
+Workbox
+(Optional Electron)
+
 
 ## Setup
 
@@ -6,9 +17,9 @@
 
 ## Run
 
-## Vercer Trades API
+## Trades API
 
-(You will need to run the Vercer trades API as per Vercer trades readme)
+(You will need to run the trades API)
 
 ## React App
 

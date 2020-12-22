@@ -1,5 +1,9 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path'),
+  htmlPlugin = require('html-webpack-plugin'),
+  CopyWebpackPlugin = require('copy-webpack-plugin'),
+  { CleanWebpackPlugin } = require('clean-webpack-plugin'),
+  // InterpolateHtmlPlugin = require('interpolate-html-plugin'),
+  workboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   resolve: {
@@ -42,6 +46,25 @@ module.exports = {
     publicPath: './',
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Vercer Trades' }),
+    new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public', to: './' },
+      ],
+    }),
+    // new InterpolateHtmlPlugin({
+    //   'NODE_ENV': 'development'
+    // }),
+    new htmlPlugin({
+      filename: 'index.html',
+      template: "./index.html",
+      title: 'Simple Trader PWA'
+    }),
+    new workboxPlugin.GenerateSW({
+      swDest: 'sw.js',
+      clientsClaim: true,
+      skipWaiting: true,
+    })
+    
   ],
 };
